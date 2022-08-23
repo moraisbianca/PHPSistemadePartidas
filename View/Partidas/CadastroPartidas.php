@@ -20,18 +20,22 @@
                    value="<?= $model->id ?>" />
 
            
+            
             <label for="data_partida">Data da Partida:</label>
             <input name="data_partida"
                    id="data_partida" 
                    type="date" 
-                   value="<?= $model->data_partida ?>" />
+                   value="<?= $model->data_partida ?>" /> <br>
 
+
+             <label for="resultado">Brancas:</label>
              <select name="id_jogador1">
                 <?php foreach($model->arr_jogadores as $jogador ):?>
                     <option value="<?= $jogador['id']?>"><?= $jogador['nome']?></option>
                 <?php endforeach?>
              </select>
              <label for="">x</label>
+             <label for="resultado">Pretas:</label>
              <select name="id_jogador2">
                 <?php foreach($model->arr_jogadores as $jogador ):?>
                     <option value="<?= $jogador['id']?>"><?= $jogador['nome']?></option>
@@ -39,10 +43,12 @@
              </select>
 
              
+             
+             <br> <label for="resultado">Resultado:</label>
             <input name="resultado" 
                    id="resultado" 
                    type="text" 
-                   value="<?= $model->resultado ?>" />
+                   value="<?= $model->resultado ?>" /> <br>
             
                    
             <button type="submit">Enviar</button>

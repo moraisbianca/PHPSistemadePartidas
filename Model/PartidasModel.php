@@ -4,6 +4,7 @@ class PartidasModel
 {
 
     public $id, $data_partida, $id_jogador1, $id_jogador2, $resultado;
+    public $jogador1, $jogador2;
     public $arr_jogadores = array();
     public $rows;
 
